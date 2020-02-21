@@ -47,4 +47,9 @@ let menuContent = (arr) => {
     li.textContent = arr[i];
   }
 
+let menuButton = document.querySelector('.header .menu-button');
+menuButton.addEventListener('click', () => {
+  menu.classList.toggle('menu--open');
+})
+
 }
