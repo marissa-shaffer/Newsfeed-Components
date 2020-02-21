@@ -127,8 +127,16 @@ let createArticle = (headerContent, dateContent, para1Content, para2Content, par
   paraDate.textContent = dateContent;
 
   let para1 = document.createElement('p');
+  para1.classList.add('firstParagraph');
+  para1.textContent = para1Content;
+
   let para2 = document.createElement('p');
+  para2.classList.add('secontParagraph');
+  para2.textContent = para2Content;
+
   let para3 = document.createElement('p');
+  para3.classList.add('paragraphThree');
+  para3.textContent = para3Content;
 
   let expandButton = document.createElement('span');
   expandButton.classList.add('expandButton');
