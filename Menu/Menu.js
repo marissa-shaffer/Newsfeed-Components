@@ -52,4 +52,6 @@ menuButton.addEventListener('click', () => {
   menu.classList.toggle('menu--open');
 })
 
+return menu;
+
 }
