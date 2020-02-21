@@ -150,3 +150,9 @@ article.appendChild(article);
 
 return article;
 
+let body = document.querySelector('body');
+
+data.map((item) => {
+  let newArticle = createArticle(item.title, item.date, item.firstParagraph, item.secondParagraph, item.thirdParagraph);
+  body.appendChild(newArticle);
+})
