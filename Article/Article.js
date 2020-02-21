@@ -118,5 +118,22 @@ let createArticle = (headerContent, dateContent, para1Content, para2Content, par
   let article = document.createElement('div');
   article.classList.add('article');
 
-  
+  let header = document.creatElement('h2');
+  header.textContent = headerContent;
+
+  let paraDate = document.creatElement('p');
+  paraDate.classList.add('date');
+  paraDate.textContent = dateContent;
+
+  let para1 = document.createElement('p');
+  let para2 = document.createElement('p');
+  let para3 = document.createElement('p');
+
+  let expandButton = document.createElement('span');
+  expandButton.classList.add('expandButton');
+  expandButton.textContent = '\u25bc';
+
+  let buttonToggler = (e) => {
+    article.classList.toggle('article-open');
+  }
 }
