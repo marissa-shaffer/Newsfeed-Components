@@ -55,3 +55,6 @@ menuButton.addEventListener('click', () => {
 return menu;
 
 }
+
+let header = document.querySelector('.header');
+header.appendChild(menuContent(menuItems));
