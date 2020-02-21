@@ -137,3 +137,16 @@ let createArticle = (headerContent, dateContent, para1Content, para2Content, par
     article.classList.toggle('article-open');
   }
 }
+
+expandButton.addEventListener('click', buttonToggler)
+
+article.appendChild(header);
+article.appendChild(paraDate);
+article.appendChild(para1);
+article.appendChild(para2);
+article.appendChild(para3);
+article.appendChild(expandButton);
+article.appendChild(article);
+
+return article;
+
