@@ -112,6 +112,8 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+// create a .forEach for data
+
 
 let createArticle = (headerContent, dateContent, para1Content, para2Content, para3Content) => {
 
@@ -145,10 +147,14 @@ article.appendChild(para1);
 article.appendChild(para2);
 article.appendChild(para3);
 article.appendChild(expandButton);
-article.appendChild(article);
 
 return article;
 }
+
+const articles = document.querySelector('.articles');
+data.forEach(data => {
+  articles.appendChild(createArticle(data.title, data.date, data.firstParagraph, data.secondParagraph, data.thirdParagraph))
+})
 
 let body = document.querySelector('body');
 
