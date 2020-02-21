@@ -154,10 +154,3 @@ const articles = document.querySelector('.articles');
 data.forEach(data => {
   articles.appendChild(createArticle(data.title, data.date, data.firstParagraph, data.secondParagraph, data.thirdParagraph))
 })
-
-let body = document.querySelector('body');
-
-data.map((item) => {
-  let newArticle = createArticle(item.title, item.date, item.firstParagraph, item.secondParagraph, item.thirdParagraph);
-  body.appendChild(newArticle);
-})
