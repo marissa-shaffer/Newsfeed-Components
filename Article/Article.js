@@ -118,10 +118,10 @@ let createArticle = (headerContent, dateContent, para1Content, para2Content, par
   let article = document.createElement('div');
   article.classList.add('article');
 
-  let header = document.creatElement('h2');
+  let header = document.createElement('h2');
   header.textContent = headerContent;
 
-  let paraDate = document.creatElement('p');
+  let paraDate = document.createElement('p');
   paraDate.classList.add('date');
   paraDate.textContent = dateContent;
 
@@ -136,7 +136,6 @@ let createArticle = (headerContent, dateContent, para1Content, para2Content, par
   let buttonToggler = (e) => {
     article.classList.toggle('article-open');
   }
-}
 
 expandButton.addEventListener('click', buttonToggler)
 
@@ -149,6 +148,7 @@ article.appendChild(expandButton);
 article.appendChild(article);
 
 return article;
+}
 
 let body = document.querySelector('body');
 
